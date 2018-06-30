@@ -1,7 +1,8 @@
 package com.thomasmaffia.wow.bnet.api.objects.character;
 
-public class Character {
+import com.thomasmaffia.wow.bnet.api.objects.guild.Guild;
 
+public class Character {
     private final String name;
     private final String realm;
     private final String battlegroup;
@@ -12,7 +13,11 @@ public class Character {
     private final long achievementPoints;
     private final String thumbnail;
     private final Faction faction;
-
+    private int itemLevel;
+    private int itemLevelEquipped;
+    private Guild guild;
+    private int guildRank;
+    private int artifactLevel;
 
     public Character(String name, String realm, String battlegroup,
                      CharacterClass charClass, Race race, Gender gender,
@@ -67,5 +72,45 @@ public class Character {
 
     public Faction getFaction() {
         return faction;
+    }
+
+    public int getItemLevel() {
+        return itemLevel;
+    }
+
+    public void setItemLevel(int itemLevel) {
+        this.itemLevel = itemLevel;
+    }
+
+    public int getItemLevelEquipped() {
+        return itemLevelEquipped;
+    }
+
+    public void setItemLevelEquipped(int itemLevelEquipped) {
+        this.itemLevelEquipped = itemLevelEquipped;
+    }
+
+    public Guild getGuild() {
+        return guild;
+    }
+
+    public void setGuild(Guild guild) {
+        this.guild = guild;
+    }
+
+    public int getGuildRank() {
+        return guildRank;
+    }
+
+    public void setGuildRank(int guildRank) {
+        this.guildRank = guildRank;
+    }
+
+    public int getArtifactLevel() {
+        return artifactLevel;
+    }
+
+    public void setArtifactLevel(int artifactLevel) {
+        this.artifactLevel = artifactLevel;
     }
 }
