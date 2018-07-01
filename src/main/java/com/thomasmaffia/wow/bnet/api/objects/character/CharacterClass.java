@@ -2,22 +2,25 @@ package com.thomasmaffia.wow.bnet.api.objects.character;
 
 public enum CharacterClass {
 
-    WARRIOR(1),
-    PALADIN(2),
-    HUNTER(3),
-    ROGUE(4),
-    PRIEST(5),
-    DEATH_KNIGHT(6),
-    SHAMAN(7),
-    MAGE(8),
-    WARLOCK(9),
-    MONK(10),
-    DRUID(11),
-    DEMON_HUNTER(12);
+    WARRIOR(1, "Warrior"),
+    PALADIN(2, "Paladin"),
+    HUNTER(3, "Hunter"),
+    ROGUE(4, "Rogue"),
+    PRIEST(5, "Priest"),
+    DEATH_KNIGHT(6, "Death Knight"),
+    SHAMAN(7, "Shaman"),
+    MAGE(8, "Mage"),
+    WARLOCK(9, "Warlock"),
+    MONK(10, "Monk"),
+    DRUID(11, "Druid"),
+    DEMON_HUNTER(12, "Demon Hunter");
 
     private final int classId;
-    CharacterClass(int classId) {
+    private final String className;
+
+    CharacterClass(int classId, String className) {
         this.classId = classId;
+        this.className = className;
     }
 
     public static CharacterClass get(int classId) {
@@ -27,5 +30,13 @@ public enum CharacterClass {
             }
         }
         return null;
+    }
+
+    public int getClassId() {
+        return classId;
+    }
+
+    public String getClassName() {
+        return className;
     }
 }
