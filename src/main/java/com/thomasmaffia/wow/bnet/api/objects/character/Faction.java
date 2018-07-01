@@ -1,5 +1,11 @@
 package com.thomasmaffia.wow.bnet.api.objects.character;
 
+/**
+ * {@link Faction} Enum for character factions.
+ * @author Tom Maffia <ta.maffia@gmail.com>
+ *
+ */
+
 public enum Faction {
     ALLIANCE(0, "Alliance"),
     HORDE(1, "Horde");

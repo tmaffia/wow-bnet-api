@@ -1,7 +1,12 @@
 package com.thomasmaffia.wow.bnet.api.objects.character;
 
-public enum CharacterClass {
+/**
+ * {@link CharacterClass} Enum for character classes.
+ * @author Tom Maffia <ta.maffia@gmail.com>
+ *
+ */
 
+public enum CharacterClass {
     WARRIOR(1, "Warrior"),
     PALADIN(2, "Paladin"),
     HUNTER(3, "Hunter"),

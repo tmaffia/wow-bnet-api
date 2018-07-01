@@ -1,5 +1,11 @@
 package com.thomasmaffia.wow.bnet.api.objects.character;
 
+/**
+ * {@link Race} Enum for character races
+ * @author Tom Maffia <ta.maffia@gmail.com>
+ *
+ */
+
 public enum Race {
     HUMAN(1, "Human"),
     ORC(2, "Orc"),

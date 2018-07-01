@@ -1,5 +1,11 @@
 package com.thomasmaffia.wow.bnet.api.objects.character;
 
+/**
+ * {@link Gender} Enum for character gender
+ * @author Tom Maffia <ta.maffia@gmail.com>
+ *
+ */
+
 public enum Gender {
     MALE(0, "Male"),
     FEMALE(1, "Female");

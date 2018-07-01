@@ -4,6 +4,12 @@ import com.thomasmaffia.wow.bnet.api.objects.character.Faction;
 
 import java.util.ArrayList;
 
+/**
+ * {@link Guild} Pojo for Guild. Includes list of members.
+ * @author Tom Maffia <ta.maffia@gmail.com>
+ *
+ */
+
 public class Guild {
 
     private final String name;

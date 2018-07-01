@@ -2,6 +2,12 @@ package com.thomasmaffia.wow.bnet.api.objects.character;
 
 import com.thomasmaffia.wow.bnet.api.objects.guild.Guild;
 
+/**
+ * {@link Character} Pojo for Character object.
+ * @author Tom Maffia <ta.maffia@gmail.com>
+ *
+ */
+
 public class Character {
     private final String name;
     private final String realm;
